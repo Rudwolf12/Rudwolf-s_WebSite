@@ -1,3 +1,44 @@
 @media only screen and (max-width: 800px) {
-      
+    .header_nav {
+        display: none;
+    }  
+
+    .Menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu_drop {
+        display: block;
+    }
+
+    .menu_drop {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        margin: auto;
+    }
+    
+    .menu_drop ul {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+    }
+     
+    .menu_drop li {
+        list-style: none;
+    }
+     
+    .menu_drop a {
+        padding: 14px 16px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+     
+    .menu_drop ul a:hover {
+        color: gray;
+    }
 }

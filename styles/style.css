@@ -20,14 +20,14 @@ header {
     float: inline-start;
 }
 
+.Menu {
+    display: none;
+}
+
 .header_nav {
     grid-area: nav1;
     position: absolute;
     right: 0;
-}
-
-.header_nav img {
-    visibility: hidden;
 }
 
 .header_nav ul {
@@ -52,9 +52,13 @@ header {
     color: gray;
 }
 
+.menu_drop {
+    display: none;
+}
+
 .perfil {
     background-position: center;
-    background-image: url("https://rudwolf12.github.io/Rudwolf-s_WebPages/images/placeholders/a.png");
+    background-image: url("https://rudwolf12.github.io/Rudwolf-s_WebSite/images/placeholders/a.png");
     padding: 50px;
     font-size: x-large;
 }
