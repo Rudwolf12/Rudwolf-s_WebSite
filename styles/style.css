@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(91, 97, 159);
+    font-family: "Diphylleia", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    display: block;
+}
+  
+header {
+    display: flex;
+    background: black;
+    color: white;
+}
+
+#icon_rudwolf {
+    width: 128px;
+    float: inline-start;
+}
+
+.header_nav {
+    grid-area: nav1;
+    position: absolute;
+    right: 0;
+}
+
+.header_nav img {
+    visibility: hidden;
+}
+
+.header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    
+}
+ 
+.header_nav li {
+    list-style: none;
+    display: inline-flex;
+}
+ 
+.header_nav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+ 
+.header_nav ul a:hover {
+    color: gray;
+}
+
+.perfil {
+    background-position: center;
+    background-image: url("/images/placeholders/a.png");
+    padding: 50px;
+    font-size: x-large;
+}
+
+#Perfil {
+    width: 256px;
+    
+}
+
+.info {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    color: white;
+}
+
+.footer_main img {
+    width: 50px;
+    margin: 0px 5px 0 5px;
+}
