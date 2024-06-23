@@ -2,12 +2,12 @@ console.log("¡Hola mundo desde JavaScript!");
 
 function UnfoldMobileMenu()
 {
-    if (document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display == 'block')
+    if (document.querySelector('.menu_drop').style.display == 'block')
     {
-        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'none';
+        document.querySelector('.menu_drop').style.display = 'none';
     }
     else
     {
-        document.querySelector('.menu-row-mobile .menu-dropdown-mobile .menu-dropdown-content-mobile').style.display = 'block';
+        document.querySelector('.menu_drop').style.display = 'block';
     }
 }

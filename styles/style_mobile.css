@@ -11,14 +11,10 @@
     }
 
     .menu_drop {
-        display: block;
-    }
-
-    .menu_drop {
         position: absolute;
-        top: 20px;
+        top: 45px;
         right: 0;
-        margin: auto;
+        
     }
     
     .menu_drop ul {
@@ -29,13 +25,15 @@
      
     .menu_drop li {
         list-style: none;
+        background-color: black;
+        padding: 10px;
     }
      
     .menu_drop a {
-        padding: 14px 16px;
+        margin: auto;
         text-decoration: none;
         color: white;
-        background-color: black;
+        
     }
      
     .menu_drop ul a:hover {
