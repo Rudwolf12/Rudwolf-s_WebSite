@@ -73,6 +73,10 @@ header {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.icon_project {
+    width: 50px;
+}
+
 footer {
     position: absolute;
     background-color: rgb(0, 0, 0);
