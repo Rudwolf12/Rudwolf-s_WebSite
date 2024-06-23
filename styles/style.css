@@ -26,10 +26,6 @@ header {
     right: 0;
 }
 
-.header_nav img {
-    visibility: hidden;
-}
-
 .header_nav ul {
     list-style-type: none;
     padding: 0;
@@ -54,7 +50,7 @@ header {
 
 .perfil {
     background-position: center;
-    background-image: url("https://rudwolf12.github.io/Rudwolf-s_WebPages/images/placeholders/a.png");
+    background-image: url("https://rudwolf12.github.io/Rudwolf-s_WebSite/images/placeholders/a.png");
     padding: 50px;
     font-size: x-large;
 }
