@@ -20,12 +20,7 @@ header {
     float: inline-start;
 }
 
-.Menu {
-    display: none;
-}
-
 .header_nav {
-    grid-area: nav1;
     position: absolute;
     right: 0;
 }
@@ -52,6 +47,10 @@ header {
     color: gray;
 }
 
+.Menu {
+    display: none;
+}
+
 .menu_drop {
     display: none;
 }
@@ -65,7 +64,6 @@ header {
 
 #Perfil {
     width: 256px;
-    
 }
 
 .info {

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="./../styles/style_mobile.css">
+    <title>Rudwolf -- Contacto</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./../images/icons/Logo_Rudwolf_oscuro.svg" alt="Rudwolf" id="icon_rudwolf">
+        </div>
+        <div class="header_nav">
+            <nav>
+                <ul>
+                    <li><a href="./../index.html">Inicio</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="javascript:void(0)" class="boton-de-menu" onclick="UnfoldMobileMenu()">
+            <img src="./../images/icons/Menu.svg" alt="Menu" class="Menu">
+        </a>
+        <div class="menu_drop">
+            <nav>
+                <ul>
+                    <li><a href="./../index.html">Inicio</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <main>
+        <form action="./../Data/Datos.accdb" method="post" autocomplete="on">
+            <fieldset>
+                <legend><h1>Datos</h1></legend>
+            <label for="#email">Correo electronico:</label>
+            <input type="email" name="email" id="email" placeholder="you@email.com">
+            <br> <br>
+            <label for="#foto">Foto de referencia:</label>
+            <input type="file" name="foto" id="foto">
+            <br> <br>
+            <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
