@@ -36,14 +36,28 @@
     </header>
     <br>
     <main>
-        <form action="./../Data/Datos.accdb" method="post" autocomplete="on">
+        <form action="./../Data/Cliente.xlsx"
+        method="post"
+        enctype="application/vnd.ms-excel">
             <fieldset>
                 <legend><h1>Datos</h1></legend>
+            <label for="#nombre">Nombre/s</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Jhon" autocomplete="name">
+            <br><br>
+            <label for="#apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Doe" autocomplete="family-name">
+            <br><br>
             <label for="#email">Correo electronico:</label>
             <input type="email" name="email" id="email" placeholder="you@email.com">
             <br> <br>
-            <label for="#foto">Foto de referencia:</label>
-            <input type="file" name="foto" id="foto">
+            <label for="#numero_telefonico">Número de telefono:</label>
+            <input type="tel" name="numero_telefonico" id="numero_telefonico" placeholder="123-456-7890" autocomplete="tel">
+            <br><br>
+            <label for="#pedido">Pedido:</label>
+            <input type="text" name="pedido" id="pedido">
+            <br><br>
+            <label for="#referencia">Foto de referencia:</label>
+            <input type="file" name="referencia" id="referencia">
             <br> <br>
             <input type="submit" value="Enviar">
             </fieldset>
