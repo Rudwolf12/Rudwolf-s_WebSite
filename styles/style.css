@@ -88,3 +88,42 @@ footer {
     width: 50px;
     margin: 5px 5px 0 5px;
 }
+
+input:valid, input::placeholder {
+    background-color: rgba(54, 143, 54, 0.788);
+    color: rgb(40, 40, 40);
+}
+
+input:invalid {
+    background-color: crimson;
+}
+
+.foreground {
+    margin: 0;
+  padding: 0.3rem;
+  background-color: #9a9ec66d;
+}
+
+.foreground > h1,
+.underground {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.underground > h2,
+.underground > p {
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+
+.underground {
+    background-color: #eeeeee4d;
+}
+
+.twitter-tweet {
+    width: 144px;
+}
