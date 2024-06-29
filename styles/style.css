@@ -89,13 +89,13 @@ footer {
     margin: 5px 5px 0 5px;
 }
 
-input:valid, input::placeholder {
-    background-color: rgba(54, 143, 54, 0.788);
+input:valid {
+    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/check.svg") white;
     color: rgb(40, 40, 40);
 }
 
 input:invalid {
-    background-color: crimson;
+    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/close.svg") white;
 }
 
 .foreground {

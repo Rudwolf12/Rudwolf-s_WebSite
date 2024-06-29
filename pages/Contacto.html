@@ -36,32 +36,34 @@
     </header>
     <br>
     <main>
-        <form action="mailto:rodolfopemc@outlook.com" method="get" enctype="multipart/form-data" autocomplete="on">
+        <form action="" method="get" enctype="multipart/form-data" autocomplete="on" rel="author">
             <fieldset>
                 <legend><h1>Datos</h1></legend>
-            <label for="#nombre">Nombre/s</label>
+            <label for="nombre">Nombre/s</label>
             <input type="text" name="name" id="nombre" placeholder="Jhon">
             <br><br>
-            <label for="#apellidos">Apellidos:</label>
+            <label for="apellidos">Apellidos:</label>
             <input type="text" name="apellidos" id="apellidos" placeholder="Doe">
             <br><br>
-            <label for="#email">Correo electronico:</label>
+            <label for="email">Correo electronico:</label>
             <input type="email" name="cc" id="email" placeholder="you@email.com">
             <br> <br>
-            <label for="#pedido">Pedido:</label>
+            <label for="pedido">Pedido:</label>
             <input type="text" name="subject" id="pedido">
             <br><br>
-            <label for="#descripcion">Descripcion:</label>
+            <label for="descripcion">Descripcion:</label>
             <input type="text" name="body" id="descripcion">
             <span></span>
             <br><br>
-            <label for="#referencia">Foto de referencia:</label>
+            <label for="referencia">Foto de referencia:</label>
             <input type="file" name="file" id="referencia" accept="image/*,.pdf" multiple>
             <br> <br>
             <input type="submit" value="Enviar">
             </fieldset>
         </form>
+        <embed src="./../pages/Pedido.xml" type="aplication/xml">
     </main>
     <footer></footer>
 </body>
+<script src="./../scripts/Database.js"></script>
 </html>
