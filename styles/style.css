@@ -120,10 +120,11 @@ input:invalid {
   font-size: 1rem;
 }
 
-.underground {
-    background-color: #eeeeee4d;
-}
-
 .twitter-tweet {
     width: 144px;
+}
+
+.instagram-media {
+    width: 130px;
+    border-radius: 25px;
 }
