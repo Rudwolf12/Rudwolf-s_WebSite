@@ -39,4 +39,13 @@
     .menu_drop ul a:hover {
         color: gray;
     }
+
+    .underground blockquote {
+        width: 144px;
+    }
+    .underground iframe {
+        min-width: 160px;
+        width: 260px;
+        border-radius: 10px;
+    }
 }

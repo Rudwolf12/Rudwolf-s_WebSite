@@ -120,11 +120,8 @@ input:invalid {
   font-size: 1rem;
 }
 
-.twitter-tweet {
-    width: 144px;
-}
-
-.instagram-media {
-    width: 130px;
-    border-radius: 25px;
+.underground blockquote {
+    width: 250px;
+    margin: 25px;
+    border-radius: 10px;
 }
