@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./../styles/style.css">
     <link rel="stylesheet" href="./../styles/style_mobile.css">
     <link rel="shortcut icon" href="./../images/Wolf.png" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('RtJQQMT7CVtUwGpbA')</script>
     <title>Rudwolf -- Contacto</title>
 </head>
 <body>
@@ -48,32 +50,28 @@
 
         <br><br>
         
-        <form action="javascript:guardar()"  method="post" enctype="multipart/form-data" autocomplete="on" rel="author" id="form-data">
-            <fieldset>
-                <legend><h2>Datos</h2></legend>
-            <label for="nombre">Nombre/s</label>
-            <input type="text" name="name" id="nombre" placeholder="Jhon">
-            <br><br>
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" name="apellidos" id="apellidos" placeholder="Doe">
-            <br><br>
-            <label for="email">Correo electronico:</label>
-            <input type="email" name="email" id="email" placeholder="you@email.com">
-            <br> <br>
-            <label for="pedido">Pedido:</label>
-            <input type="text" name="pedido" id="pedido">
-            <br><br>
-            <label for="detalles">Detalles:</label>
-            <input type="text" name="detalles" id="detalles">
-            <span></span>
-            <br><br>
-            <label for="referencia">Foto de referencia:</label>
-            <input type="file" name="referencia" id="referencia" accept="image/*,.pdf" multiple>
-            <br> <br>
-            <input type="submit" value="Enviar">
-            </fieldset>
-        </form>
-        
+        <form id="form" method="post">
+            <div class="field">
+              <label for="from_name">Nombre:</label>
+              <input type="text" name="from_name" id="from_name">
+            </div>
+            <div class="field">
+              <label for="message">Mensaje:</label>
+              <input type="text" name="message" id="message">
+            </div>
+            <div class="field">
+              <label for="file">Archivo adjunto:</label>
+              <input type="file" name="archivo" id="archivo">
+              <input type="text" name="file" id="file">
+            </div>
+            <div class="field">
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email">
+            </div>
+          
+            <input type="submit" id="button" value="Send Email" >
+          </form>
+
         <table align="center" id="datos">
             <caption>Clientes</caption>
             <thead>

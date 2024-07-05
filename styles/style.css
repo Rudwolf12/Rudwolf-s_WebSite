@@ -90,7 +90,7 @@ footer {
 }
 
 input:valid {
-    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/check.svg") white;
+    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/check.svg") whitesmoke;
     color: rgb(40, 40, 40);
 }
 
@@ -144,11 +144,13 @@ table, td, th {
 }
 
 #form-data {
-    display: none;
+    display: block;
+    padding: auto;
+    margin: auto;
 }
 
 #Social_media {
-    display: block;
+    display: none;
 
 }
 
@@ -161,3 +163,36 @@ table, td, th {
     width: 100px;
     height: 50px;
 }
+
+#form {
+    display: inline-block;
+    padding: auto;
+    margin: auto;
+}
+
+.field {
+    margin-bottom: 10px;
+  }
+  
+  .field label {
+    display: block;
+    float: inline-start;
+    color: #000000;
+    width: 100px;
+  }
+  
+  .field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+  }

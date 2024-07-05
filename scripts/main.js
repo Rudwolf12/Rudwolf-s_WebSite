@@ -36,26 +36,38 @@ function SocialMediaDisplay()
     }
 }
 
-function guardar() {
-  const input = document.getElementById("referencia");
+  
+
+const btn = document.getElementById('button');
+
+document.getElementById('form').addEventListener('submit', function(event) {
+  const input = document.getElementById("archivo");
   const [file] = input.files; // Obtén el archivo seleccionado
   
   if (file) {
     // Aquí puedes enviar el archivo al servidor o procesarlo según tus necesidades
-    console.log("Imagen seleccionada:", file.name);
-    var _referencia = URL.createObjectURL(file);
-    console.log("url:",_referencia)
+    console.log("Archivo seleccionado:", file.name);
+    var _file = URL.createObjectURL(file);
+    console.log("url:",_file)
   } else {
-    console.log("No se ha seleccionado ninguna imagen.");
+    console.log("No se ha seleccionado ningun archivo.");
   }
-  var _Id = _Id++;
-  var _nombre = document.getElementById("nombre").value;
-  var _apellidos = document.getElementById("apellidos").value;
-  var _email = document.getElementById("email").value;
-  var _pedido = document.getElementById("pedido").value;
-  var _detalles = document.getElementById("detalles").value;
-  
-  var fila = `<tr><td>${_Id}</td><td>${_nombre}</td><td>${_apellidos}</td><td>${_email}</td><td>${_pedido}</td><td>${_detalles}</td><td><img src="${_referencia}"></img></td></tr>`;
-  document.getElementById("datos_body").innerHTML = fila;
-  document.location.href = "mailto:rodolfopemc@outlook.com?subject=" + _pedido + "&body=" + _detalles + " " + file;
-}
+  document.getElementById("file").value = _file;
+  document.getElementById("archivo").value = "";
+
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_v5xv2bj';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
