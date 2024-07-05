@@ -143,12 +143,6 @@ table, td, th {
     padding: 20px;
 }
 
-#form-data {
-    display: block;
-    padding: auto;
-    margin: auto;
-}
-
 #Social_media {
     display: none;
 
@@ -165,7 +159,7 @@ table, td, th {
 }
 
 #form {
-    display: inline-block;
+    display: none;
     padding: auto;
     margin: auto;
 }

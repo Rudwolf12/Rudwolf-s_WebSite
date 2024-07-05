@@ -14,13 +14,13 @@ function UnfoldMobileMenu()
 
 function formDisplay()
 {
-    if (document.getElementById('form-data').style.display == 'block')
+    if (document.getElementById('form').style.display == 'inline-block')
     {
-        document.getElementById('form-data').style.display = 'none';
+        document.getElementById('form').style.display = 'none';
     }
     else
     {
-        document.getElementById('form-data').style.display = 'block';
+        document.getElementById('form').style.display = 'inline-block';
     }
 }
 
