@@ -167,6 +167,10 @@ table, td, th {
 .field {
     margin-bottom: 10px;
   }
+
+  .field #archivo {
+    display: none;
+  }
   
   .field label {
     display: block;
