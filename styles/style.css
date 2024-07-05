@@ -125,3 +125,39 @@ input:invalid {
     margin: 25px;
     border-radius: 10px;
 }
+
+.datos {
+    display: none;
+}
+#datos {
+    display: none;
+    border-collapse: collapse;
+}
+
+#datos img {
+    width: 50px;
+}
+
+table, td, th {
+    border: 2px #000000 solid;
+    padding: 20px;
+}
+
+#form-data {
+    display: none;
+}
+
+#Social_media {
+    display: block;
+
+}
+
+#Social_media img {
+    width: 200px;
+}
+
+.btnContacto {
+    padding: 0;
+    width: 100px;
+    height: 50px;
+}

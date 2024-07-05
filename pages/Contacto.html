@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../styles/style.css">
     <link rel="stylesheet" href="./../styles/style_mobile.css">
+    <link rel="shortcut icon" href="./../images/Wolf.png" type="image/x-icon">
     <title>Rudwolf -- Contacto</title>
 </head>
 <body>
@@ -16,19 +17,18 @@
             <nav>
                 <ul>
                     <li><a href="./../index.html">Inicio</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><a href=""></a></li>
+                    <li><a href="pages/Novedades.html">Ultimas novedades</a></li>
                 </ul>
             </nav>
         </div>
         <a href="javascript:void(0)" class="boton-de-menu" onclick="UnfoldMobileMenu()">
-            <img src="./../images/icons/Menu.svg" alt="Menu" class="Menu">
+            <img src="./../images/icons/Google fonts/menu.svg" alt="Menu" class="Menu">
         </a>
         <div class="menu_drop">
             <nav>
                 <ul>
                     <li><a href="./../index.html">Inicio</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="Novedades.html">Novedades</a></li>
                     <li><a href=""></a></li>
                 </ul>
             </nav>
@@ -36,31 +36,64 @@
     </header>
     <br>
     <main>
-        <form action="./../Data/data.json" method="post" enctype="text/plain" autocomplete="on" rel="author">
+        <h1>¡Contactame!</h1>
+        <p>
+            Puedes <br>
+            <button class="btnContacto" title="email" formaction="mailto:rodolfopemc@outlook.com">¡Contactame por un correo!</button>
+            <br> o <br>
+            <button class="btnContacto" title="form" onclick="formDisplay()">¡Escribe un formulario!</button>
+            <br> tambien puedes checar <br>
+            <button class="btnContacto" title="Social_media" onclick="SocialMediaDisplay()">Mis redes sociales</button>
+        </p>
+
+        <br><br>
+        
+        <form action="javascript:guardar()"  method="post" enctype="multipart/form-data" autocomplete="on" rel="author" id="form-data">
             <fieldset>
-                <legend><h1>Datos</h1></legend>
+                <legend><h2>Datos</h2></legend>
             <label for="nombre">Nombre/s</label>
             <input type="text" name="name" id="nombre" placeholder="Jhon">
             <br><br>
             <label for="apellidos">Apellidos:</label>
-            <input type="text" name="last name" id="apellidos" placeholder="Doe">
+            <input type="text" name="apellidos" id="apellidos" placeholder="Doe">
             <br><br>
             <label for="email">Correo electronico:</label>
             <input type="email" name="email" id="email" placeholder="you@email.com">
             <br> <br>
             <label for="pedido">Pedido:</label>
-            <input type="text" name="subject" id="pedido">
+            <input type="text" name="pedido" id="pedido">
             <br><br>
             <label for="detalles">Detalles:</label>
-            <input type="text" name="body" id="detalles">
+            <input type="text" name="detalles" id="detalles">
             <span></span>
             <br><br>
             <label for="referencia">Foto de referencia:</label>
-            <input formtarget="" type="file" name="body" id="referencia" accept="image/*,.pdf" multiple>
+            <input type="file" name="referencia" id="referencia" accept="image/*,.pdf" multiple>
             <br> <br>
             <input type="submit" value="Enviar">
             </fieldset>
         </form>
+        
+        <table align="center" id="datos">
+            <caption>Clientes</caption>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>nombre</th>
+                    <th>apellidos</th>
+                    <th>email</th>
+                    <th>pedido</th>
+                    <th>detalles</th>
+                    <th>referencia</th>
+                </tr>
+            </thead>
+            <tbody id="datos_body"></tbody>
+        </table>
+        
+        <section id="Social_media">
+            <h2>Mis redes Sociales</h2>
+            <p>En construccion...</p>
+        </section>
     </main>
     <footer></footer>
 </body>
