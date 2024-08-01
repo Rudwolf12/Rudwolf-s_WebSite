@@ -166,31 +166,35 @@ table, td, th {
 
 .field {
     margin-bottom: 10px;
-  }
+}
 
-  .field #file {
+.field #file {
     display: none;
-  }
+}
   
-  .field label {
+.field label {
     display: block;
     float: inline-start;
     color: #000000;
     width: 100px;
-  }
+}
   
-  .field input {
+.field input {
     display: block;
     min-width: 250px;
     line-height: 1.5;
     font-size: 14px;
-  }
+}
   
-  input[type="submit"] {
+input[type="submit"] {
     display: block;
     padding: 6px 30px;
     font-size: 14px;
     background-color: #4460AA;
     color: #fff;
     border: none
-  }
+}
+
+main div {
+    padding-bottom: 2em;
+}
