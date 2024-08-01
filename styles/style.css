@@ -89,13 +89,12 @@ footer {
     margin: 5px 5px 0 5px;
 }
 
-input:valid {
-    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/check.svg") whitesmoke;
-    color: rgb(40, 40, 40);
+input:where([type="text"],[type="email"]):valid, textarea:valid {
+    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/check.svg") #42466c;
 }
 
-input:invalid {
-    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/close.svg") white;
+input:where([type="text"],[type="email"]):invalid {
+    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/close.svg") #42466c;
 }
 
 .foreground {
