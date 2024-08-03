@@ -1,5 +1,5 @@
 @sugerencias_script_HostAddress = http://127.0.0.1:3000
 
 Get {{sugerencias_script_HostAddress}}/pages/Sugerencia.html
-Accept message/http
+Accept Aplication\json
 ###
