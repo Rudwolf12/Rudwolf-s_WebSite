@@ -1,5 +1,3 @@
-console.log("¡Hola mundo desde JavaScript!");
-
 function UnfoldMobileMenu()
 {
     if (document.querySelector('.menu_drop').style.display == 'block')
@@ -36,7 +34,4 @@ function SocialMediaDisplay()
     }
 }
 
-  
-
-const btn = document.getElementById('button');
-
+console.log("¡Hola mundo desde JavaScript!");
