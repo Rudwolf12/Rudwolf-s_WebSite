@@ -1,3 +1,7 @@
+import datos from './../Data/form-sug/formulario.json';
+
+// Aquí puedes trabajar con los datos del archivo JSON
+console.log(datos);
 console.log("¡Hola mundo desde JavaScript!");
 
 function UnfoldMobileMenu()
