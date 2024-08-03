@@ -38,14 +38,14 @@
     <main>
         <h1 id="title">Rudwolf</h1>
         <p id="description">Ayudame a mejorar mis proyectos.</p>
-    <form action="./../Data/form-sug/formulario.json" name="survey-form" id="survey-form" method="post">
+    <form name="survey-form" id="survey-form" method="get" enctype="message/http">
         <fieldset>
             <legend>Datos del solicitante</legend>
             <label for="name" id="name-label">Nombre: </label>
-            <input type="text" name="name" id="name" placeholder="Jonh Doe" required>
+            <input type="text" name="name" id="name" autocomplete="name" placeholder="Jonh Doe" required>
             <label for="email" id="email-label">Email: </label>
-            <input type="email" name="email" id="email" placeholder="You@email.com" required>
-            <label for="number" id="age-label">Edad:</label>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="You@email.com" required>
+            <label for="age" id="age-label">Edad:</label>
             <input type="number" name="age" id="age" min="13" max="100" placeholder="24" required>
         </fieldset>
         <fieldset>
@@ -55,12 +55,12 @@
                 <option value="1">Rudwolf's_WebSite</option>
                 <option value="2">Varg</option>
             </select>
-            <label for="radio">
-                <input type="radio" name="software" id="Software-aplicación" class="inline" value="Aplicacion">
+            <label for="Software-aplicación">
+                <input type="radio" name="software" id="Software-aplicación" class="inline" value="Aplicacion" required>
             Aplicacion
             </label>
-            <label for="radio">
-                <input type="radio" name="software" id="Software-pages" class="inline" value="Página web">
+            <label for="Software-pages">
+                <input type="radio" name="software" id="Software-pages" class="inline" value="Página web" required>
             Página web
             </label>
         </fieldset>
@@ -73,7 +73,7 @@
         <input type="submit" id="submit" value="Enviar">
     </form>
     </main>
-
+    <embed src="./../sugerencias-script/Program.cs" type="">
     <footer>
         <div class="footer_main">
             <a href="https://www.youtube.com/channel/UCgBSXi21JsUu3-AHUf_r7lQ" target="_blank" rel="noopener"><img src="./../images/icons/Social media/Youtube.svg" alt="Youtube"></a>
@@ -87,5 +87,5 @@
     </footer>
 </body>
 <script src="./../scripts/main.js"></script>
-<script src="./../sugerencias-script/Program.cs"></script>
+
 </html>

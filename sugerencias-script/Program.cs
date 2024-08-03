@@ -1,7 +1,6 @@
-using Newtonsoft.Json;
-using Datos_Form.Data;
+using Datos_Form;
 
-List<DatosFormulario> datos = JsonConvert.DeserializeObject<List<DatosFormulario>>(json);
+Console.WriteLine("Hello World");
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,25 +21,29 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 
-app.MapPost("/pages/Sugerencia.html", static context =>
+app.MapGet("/pages/Sugerencia.html", static context =>
 {
+#pragma warning disable CS8601 // Posible asignación de referencia nula
+#pragma warning disable CS8601 // Posible asignación de referencia nula
+#pragma warning disable CS8601 // Posible asignación de referencia nula
+#pragma warning disable CS8601 // Posible asignación de referencia nula
     var datosFormulario = new DatosFormulario
     {
         Nombre = context.Request.Form["name"],
         Email = context.Request.Form["email"],
         Edad = Convert.ToInt32(context.Request.Form["age"]),
         Proyecto = Convert.ToInt32(context.Request.Form["dropdown"]),
-        TipoSoftware = Convert.ToInt32(context.Request.Form["software"]),
+        TipoSoftware = context.Request.Form["software"],
         Comentarios = context.Request.Form["commins"],
         RecibirCorreo = context.Request.Form.ContainsKey("recibir-correo"),
         Legitimidad = context.Request.Form.ContainsKey("legitimidad")
     };
+#pragma warning restore CS8601 // Posible asignación de referencia nula
+#pragma warning restore CS8601 // Posible asignación de referencia nula
+#pragma warning restore CS8601 // Posible asignación de referencia nula
+#pragma warning restore CS8601 // Posible asignación de referencia nula
     
-    string json = @"[
-    { ""Nombre"": " + Nombre + ", ""Email"": " + Email + ", ""Edad"": " + Edad +", ""Proyecto"": "Proyecto", ""Tipo de Software"": "TipoSoftware", ""Comentarios"": "Comentarios", ""Recibir correos"": "RecibirCorreo", ""Es legitimo"": "Legitimidad" },]";
-    string path = @"formulario.json";
-    File.WriteAllText(path, JsonConvert.SerializeObject(datos));
-
+    Console.WriteLine(datosFormulario);
     // Aquí debes escribir el código para guardar los datos en la base de datos de Access
     // Por ejemplo, utilizando ADO.NET y una consulta SQL para insertar los datos en la tabla
 
