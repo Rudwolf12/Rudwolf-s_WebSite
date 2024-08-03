@@ -1,4 +1,4 @@
-@sugerencias_script_HostAddress = http://127.0.0.1:3000
+@sugerencias_script_HostAddress = https://rudwolf12.github.io/Rudwolf-s_WebSite/
 
 Get {{sugerencias_script_HostAddress}}/pages/Sugerencia.html
 Accept Aplication\json
