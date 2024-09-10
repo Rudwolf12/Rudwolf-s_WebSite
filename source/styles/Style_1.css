@@ -1,0 +1,220 @@
+:root {
+    --color1: #ff9b8f;
+    --color2: #ef7689;
+    --color3: #9e6a90;
+    --color4: #766788;
+    --color5: #71556b;
+    --dark1: #dce0e6;
+    --dark2: #606d80;
+    --dark3: #567ebb;
+    --dark4: #4d4d94;
+    --dark5: #1f1f20;
+}
+
+body {
+    background-color: var(--dark4);
+    font-family: "Diphylleia", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    display: block;
+    color: var(--dark5);
+}
+  
+header {
+    display: flex;
+    background: var(--dark5);
+    color: var(--dark1);
+}
+
+#icon_rudwolf {
+    width: 128px;
+    float: inline-start;
+}
+
+.header_nav {
+    position: absolute;
+    right: 0;
+}
+
+.header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    
+}
+ 
+.header_nav li {
+    list-style: none;
+    display: inline-flex;
+}
+ 
+.header_nav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--dark1);
+}
+ 
+.header_nav ul a:hover {
+    color: var(--dark2);
+}
+
+.Menu {
+    display: none;
+}
+
+.menu_drop {
+    display: none;
+}
+
+.perfil {
+    background: center fixed no-repeat;
+    background-size: cover;
+    background-image: url("./../../assets/images/banner/441385779_924933826047271_4024978161489383638_n_18052690663618145.webp");
+    padding: 50px;
+    font-size: x-large;
+}
+
+#Perfil {
+    width: 256px;
+}
+
+.info {
+    text-align: center;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.icon_project {
+    width: 30vw;
+}
+
+footer {
+    position: absolute;
+    background-color: var(--dark5);
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    color: var(--dark1);
+}
+
+.footer_main img {
+    width: 50px;
+    margin: 5px 5px 0 5px;
+}
+
+.footer_main a{
+    text-decoration: none;
+    color: var(--dark1);
+}
+
+input:where([type="text"],[type="email"]):valid, textarea:valid {
+    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/check.svg") #42466c;
+}
+
+input:where([type="text"],[type="email"]):invalid {
+    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/close.svg") #42466c;
+}
+
+.foreground {
+    margin: 0;
+  padding: 0.3rem;
+  background-color: #9a9ec66d;
+}
+
+.foreground > h1,
+.underground {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.underground > h2,
+.underground > p {
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+
+.underground blockquote {
+    width: 250px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.datos {
+    display: none;
+}
+#datos {
+    display: none;
+    border-collapse: collapse;
+}
+
+#datos img {
+    width: 50px;
+}
+
+table, td, th {
+    border: 2px var(--dark5) solid;
+    padding: 20px;
+}
+
+#Social_media {
+    display: none;
+
+}
+
+#Social_media img {
+    width: 200px;
+}
+
+.btnContacto {
+    padding: 0;
+    width: 100px;
+    height: 50px;
+}
+
+#form {
+    display: none;
+    padding: auto;
+    margin: auto;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field #file {
+    display: none;
+}
+  
+.field label {
+    display: block;
+    float: inline-start;
+    color: var(--dark5);
+    width: 100px;
+}
+  
+.field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+  
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: var(--dark1);
+    border: none
+}
+
+main div {
+    padding-bottom: 2em;
+}
