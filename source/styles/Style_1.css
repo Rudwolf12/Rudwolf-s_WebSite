@@ -1,6 +1,9 @@
+@import "./../node_modules/bootstrap/scss/bootstrap";
+@import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 :root {
     --color1: #ff9b8f;
-    --color2: #ef7689;
+    --color2: #812335;
     --color3: #9e6a90;
     --color4: #766788;
     --color5: #71556b;
@@ -12,7 +15,7 @@
 }
 
 body {
-    background-color: var(--dark4);
+    background-color: var(--bs-indigo);
     font-family: "Diphylleia", serif;
     font-weight: 400;
     font-style: normal;
@@ -20,7 +23,7 @@ body {
     margin: auto;
     padding: auto;
     display: block;
-    color: var(--dark5);
+    color: var(--bs-black);
 }
 
 p, h1, h2, h3 {
@@ -29,48 +32,18 @@ p, h1, h2, h3 {
   
 header {
     display: flex;
-    background: var(--dark5);
-    color: var(--dark1);
+    background: var(--bs-black);
+    color: var(--bs-white);
 }
 
 #icon_rudwolf {
     width: 128px;
-    float: inline-start;
+    float: inline;
 }
 
-.header_nav {
+.navbar {
     position: absolute;
     right: 0;
-}
-
-.header_nav ul {
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    
-}
- 
-.header_nav li {
-    list-style: none;
-    display: inline-flex;
-}
- 
-.header_nav a {
-    padding: 14px 16px;
-    text-decoration: none;
-    color: var(--dark1);
-}
- 
-.header_nav ul a:hover {
-    color: var(--dark2);
-}
-
-.Menu {
-    display: none;
-}
-
-.menu_drop {
-    display: none;
 }
 
 .perfil {
@@ -81,7 +54,11 @@ header {
     font-size: x-large;
 }
 
-#Perfil {
+.per {
+    max-width: 540px;
+}
+
+#perfil {
     width: 256px;
 }
 
@@ -101,7 +78,7 @@ footer {
     margin: auto;
     padding: auto;
     width: 100%;
-    color: var(--dark1);
+    color: var(--bs-white);
 }
 
 .footer_main img {
@@ -111,15 +88,7 @@ footer {
 
 .footer_main a{
     text-decoration: none;
-    color: var(--dark1);
-}
-
-input:where([type="text"],[type="email"]):valid, textarea:valid {
-    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/check.svg") #42466c;
-}
-
-input:where([type="text"],[type="email"]):invalid {
-    background: right/contain content-box border-box no-repeat url("./../images/icons/Google fonts/close.svg") #42466c;
+    color: var(--bs-white);
 }
 
 .foreground {
@@ -163,7 +132,7 @@ input:where([type="text"],[type="email"]):invalid {
 }
 
 table, td, th {
-    border: 2px var(--dark5) solid;
+    border: 2px var(--bs-black) solid;
     padding: 20px;
 }
 
@@ -198,8 +167,8 @@ table, td, th {
   
 .field label {
     display: block;
-    float: inline-start;
-    color: var(--dark5);
+    float: inline;
+    color: var(--bs-black);
     width: 100px;
 }
   
@@ -215,7 +184,7 @@ input[type="submit"] {
     padding: 6px 30px;
     font-size: 14px;
     background-color: #4460AA;
-    color: var(--dark1);
+    color: var(--bs-white);
     border: none
 }
 
@@ -223,6 +192,37 @@ main div {
     padding-bottom: 2em;
 }
 
+#photo {
+    width: 18rem;
+    margin-top: 25px;
+}
+
 .photo {
-    w
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 14rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .header_nav {
+        display: none;
+    }  
+
+    .Menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .underground blockquote {
+        width: 144px;
+    }
+    
+    .underground iframe {
+        min-width: 160px;
+        width: 260px;
+        border-radius: 10px;
+    }
 }

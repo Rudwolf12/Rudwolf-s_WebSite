@@ -3,54 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="source/styles/Style_1_min.css">
+    <link rel="stylesheet" href="source/styles/Style_1.css">
     <link rel="shortcut icon" href="assets/images/icons/Original/Rudwolf/Wolf.png" type="image/x-icon">
     <title>Rudwolf</title>
 </head>
-<body>
+<body data-bs-theme="dark">
     <header>
         <div>
             <img src="assets/images/icons/Original/Rudwolf/Logo_Rudwolf_oscuro.svg" alt="Rudwolf" id="icon_rudwolf">
         </div>
-        <div class="header_nav">
-            <nav>
-                <ul>
-                    <li><a href="source/pages/proyects.html">Proyectos</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menú</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Páginas
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="source/pages/proyects.html">Proyectos</a></li>
+                      <li><a class="dropdown-item" href="source/pages/photos.html">Fotografia</a></li>
+                    </ul>
+
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Idiomas
+                    </button>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Español</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Svenska</a></li>
+                      </ul>
+                  </li>
                 </ul>
-            </nav>
-        </div>
-        
-        <a href="javascript:void(0)" class="boton-de-menu" onclick="UnfoldMobileMenu()">
-            <img src="assets/images/icons/Google fonts/menu.svg" alt="Menu" class="Menu">
-        </a>
-        <div class="menu_drop">
-            <nav>
-                <ul>
-                    <li><a href="proyects.html">Proyectos</a></li>
-                </ul>
-            </nav>
-        </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
-        <div class="perfil">
-            <h1>Rudwolf</h1>
-            <p>Desarrollador de videojuegos.</p>
-        </div>
-        <div class="info">
-            <img src="assets/images/icons/Original/Rudwolf/Wolf.png" alt="Perfil" id="Perfil">
-            <p>Desarrollador de software y videojuegos</p>
-            <br>
-        </div>
-        <div>
-            <h2>Portafolio</h2>
-            <h3>Fotografia</h3>
-            <p>Como se puede apreciar tengo un gusto sobre la fotografia, esto me a ayudado a apreciar más la fauna y flora del lugar.<p>
-            <p>Algunos ejemplos que podemos apreciar son:</p>
-            <article>
-                <img class="photo" src="assets/images/photos/430668090_422403136927068_2354282394585419984_n_17864624928086656.webp" alt="">
-            </article>
-        </div>
+        <center>
+            <div class="perfil">
+                <h1>Rudwolf</h1>
+                <p>Desarrollador de videojuegos.</p>
+            </div>
+            <div class="info">
+              <br>
+                <center>
+                  <div class="card text-bg-dark mb-3 per" >
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="assets/images/icons/Original/Rudwolf/Wolf.png" class="img-fluid rounded-start" alt="Perfil" id="perfil">
+                        <p class="card-text"><small class="text-body-secondary">Programador Web</small></p>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">¿Quién soy?</h5>
+                          <p class="card-text">Hola, soy un estudiante de bachillerato apasionado por la informática actualmente estudio ciberseguridad, programación en c#, y programación web.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </center>
+            </div>
+            <div>
+                <h2>Portafolio</h2>
+                <center>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <h3>Fotografia</h3>
+                  <p>Como se puede apreciar tengo un gusto sobre la fotografia, esto me a ayudado a apreciar más la fauna y flora del lugar, ademas que todas las fotos son subidas a mi <a href="https://www.instagram.com/rudwo.lf/">Instagram</a>.<p>
+                  <p>Algunos ejemplos que podemos apreciar son:</p>
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card" id="photo">
+                        <img src="./../../assets/images/photos/430668090_422403136927068_2354282394585419984_n_17864624928086656.webp" class="card-img-top photo" alt="Buske">
+                        <div class="card-body">
+                          <h5 class="card-title">Buske</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <div class="card-body">
+                          <a href="https://www.instagram.com/p/C336WUsNYdo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="card-link">Publicación original</a>
+                        </div>
+                      </div>
+                    </div>
+                            <div class="col">
+                              <div class="card" id="photo">
+                                <img src="./../../assets/images/photos/454157784_1441749283164320_1587164453776797984_n_18117091600378905.webp" class="card-img-top photo" alt="Buske">
+                                <div class="card-body">
+                                  <h5 class="card-title">Första dagen på floden</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-body">
+                                  <a href="https://www.instagram.com/p/C-O8Tv2tLeE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="card-link">Publicación original</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card" id="photo">
+                                <img src="./../../assets/images/photos/455805664_519391500528938_4880798731616159462_n_18290909365201199.webp" class="card-img-top photo" alt="Buske">
+                                <div class="card-body">
+                                  <h5 class="card-title">Berg</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <div class="card-body">
+                                  <a href="https://www.instagram.com/p/C-uEdUxuKza/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="card-link">Publicación original</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </center>
+            </div>
+
+        </center>
     </main>
 
     <footer>
@@ -73,5 +160,5 @@
         </div>
     </footer>
 </body>
-<script src="source/scripts/UnfoldMobileMenu.js"></script>
+<script src="source/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </html>

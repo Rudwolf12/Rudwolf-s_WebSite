@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../styles/Style_1_min.css">
+    <link rel="stylesheet" href="./../styles/Style_1.css">
+    <link rel="shortcut icon" href="assets/images/icons/Original/Rudwolf/Wolf.png" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
@@ -11,33 +12,80 @@
         <div>
             <img src="./../../../assets/images/icons/Original/Rudwolf/Logo_Rudwolf_oscuro.svg" alt="Rudwolf" id="icon_rudwolf">
         </div>
-        <div class="header_nav">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        
-        <a href="javascript:void(0)" class="boton-de-menu" onclick="UnfoldMobileMenu()">
-            <img src="./../../../assets/images/icons/Google fonts/menu.svg" alt="Menu" class="Menu">
-        </a>
-        <div class="menu_drop">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fotos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Páginas
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="./../../index.html">Inicio</a></li>
+                    <li><a class="dropdown-item" href="photos.html">Fotografia</a></li>
+                  </ul>
+
+                  <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Idiomas
+                  </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Español</a></li>
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">Svenska</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     </header>
 
-    <main>
-
-    </main>
+    <center>
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card" id="photo">
+              <img src="./../../assets/images/photos/430668090_422403136927068_2354282394585419984_n_17864624928086656.webp" class="card-img-top photo" alt="Buske">
+              <div class="card-body">
+                <h5 class="card-title">Buske</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <div class="card-body">
+                <a href="https://www.instagram.com/p/C336WUsNYdo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="card-link">Publicación original</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="photo">
+              <img src="./../../assets/images/photos/454157784_1441749283164320_1587164453776797984_n_18117091600378905.webp" class="card-img-top photo" alt="Buske">
+              <div class="card-body">
+                <h5 class="card-title">Första dagen på floden</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <div class="card-body">
+                <a href="https://www.instagram.com/p/C-O8Tv2tLeE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="card-link">Publicación original</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="photo">
+              <img src="./../../assets/images/photos/455805664_519391500528938_4880798731616159462_n_18290909365201199.webp" class="card-img-top photo" alt="Buske">
+              <div class="card-body">
+                <h5 class="card-title">Berg</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <div class="card-body">
+                <a href="https://www.instagram.com/p/C-uEdUxuKza/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="card-link">Publicación original</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </center>
 
     <footer>
         <div class="footer_main">
@@ -59,5 +107,5 @@
         </div>
     </footer>
 </body>
-<script src="./../scripts/UnfoldMobileMenu.js"></script>
+<script src="./../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </html>

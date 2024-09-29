@@ -1,5 +1,6 @@
 @import url("Style_1.css");
 @import url("Style_1_min.css");
+@import "./../node_modules/bootstrap/scss/bootstrap.scss";
 
 main {
     text-align: left;
