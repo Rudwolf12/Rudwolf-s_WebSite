@@ -22,6 +22,10 @@ body {
     display: block;
     color: var(--dark5);
 }
+
+p, h1, h2, h3 {
+    margin: 15px;
+}
   
 header {
     display: flex;
@@ -217,4 +221,8 @@ input[type="submit"] {
 
 main div {
     padding-bottom: 2em;
+}
+
+.photo {
+    w
 }
