@@ -1,5 +1,4 @@
-@import "./../node_modules/bootstrap/scss/bootstrap";
-@import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./../bootstrap/bootstrap/dist/css/bootstrap.min.css";
 
 :root {
     --color1: #ff9b8f;
